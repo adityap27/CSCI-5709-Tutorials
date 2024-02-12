@@ -17,8 +17,6 @@ export default function RegistrationPage() {
     const fd = new FormData(event.target);
     const data = Object.fromEntries(fd.entries());
 
-    const errorsArray = [];
-
     // Validate First Name
     let [isValid, errorMsg] = validateName(data["first-name"], "First Name");
     if (!isValid) {
@@ -87,7 +85,7 @@ export default function RegistrationPage() {
 
       <input type="submit" value="Submit" />
       <br />
-      <div>{errorMessage}</div>
+      <div className="errorDiv">{errorMessage}</div>
     </form>
   );
 }
