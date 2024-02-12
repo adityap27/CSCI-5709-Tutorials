@@ -6,7 +6,6 @@ import {
   validatePassword,
 } from "../validations.js";
 
-
 export default function RegistrationPage() {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState([]);
@@ -18,9 +17,15 @@ export default function RegistrationPage() {
     const data = Object.fromEntries(fd.entries());
 
     // All are required validation
-    if (data["first-name"] !== "" || data["last-name"] || data["email"] || data["password"] || data["confirm-password"]) {
-        setErrorMessage("All fields are requried!");
-        return;
+    if (
+      data["first-name"] === "" ||
+      data["last-name"] === "" ||
+      data["email"] === "" ||
+      data["password"] === "" ||
+      data["confirm-password"] === ""
+    ) {
+      setErrorMessage("All fields are requried!");
+      return;
     }
 
     // Validate First Name
@@ -58,7 +63,7 @@ export default function RegistrationPage() {
     }
 
     setErrorMessage("");
-    navigate("/welcome",{state: {data:data}});
+    navigate("/welcome", { state: { data: data } });
   }
 
   return (

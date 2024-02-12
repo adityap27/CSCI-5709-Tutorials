@@ -6,7 +6,7 @@
 # Tutorial 3
 
 * *Date Created*: 11 FEB 2024
-* *Last Modification Date*: 11 FEB 2024
+* *Last Modification Date*: 12 FEB 2024
 * *Tutorial 3 GitLab URL*: <https://git.cs.dal.ca/apurohit/csci-5709-tutorials/-/tree/main/Tutorial3?ref_type=heads>
 * *Tutorial 3 Live Netlify URL*: <https://aditya-purohit-csci-5709-web-tut3.netlify.app/>
 
@@ -82,7 +82,7 @@ Then, use the below site configurations:
 
 ## Sources Used
 
-### t3-app\src\pages\RegistrationPage.js
+### t3-app\src\validations.js
 
 *Lines 13 - 24*
 
@@ -136,7 +136,7 @@ function ValidateEmail(input) {
 
 - <!---How---> [Simplilearn - Email Validation in JavaScript - email.js](https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript#articleLongDescription/article/h3)'s Code was modified by returning the error message along with the true/false status. Overall, only the regex string was used.
 
-### t3-app\src\pages\RegistrationPage.js
+### t3-app\src\validations.js
 
 *Lines 26 - 38*
 
