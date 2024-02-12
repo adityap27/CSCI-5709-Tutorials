@@ -17,6 +17,12 @@ export default function RegistrationPage() {
     const fd = new FormData(event.target);
     const data = Object.fromEntries(fd.entries());
 
+    // All are required validation
+    if (data["first-name"] !== "" || data["last-name"] || data["email"] || data["password"] || data["confirm-password"]) {
+        setErrorMessage("All fields are requried!");
+        return;
+    }
+
     // Validate First Name
     let [isValid, errorMsg] = validateName(data["first-name"], "First Name");
     if (!isValid) {
