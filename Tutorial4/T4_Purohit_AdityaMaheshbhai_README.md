@@ -160,7 +160,7 @@ axios.get('/user?ID=12345')
 
 
 
-### t4-aditya-app\src\pages\UserList.js
+### t4-aditya-app\src\pages\UserProfile.js
 
 *Lines 12 - 21*
 
@@ -215,5 +215,9 @@ I would like to express my gratitude to the creators and developers of the above
 
 [4]	“Getting started,” Create-react-app.dev. [Online]. Available: https://create-react-app.dev/docs/getting-started. [Accessed: 17-Feb-2024].
 
-[5]	“Netlify app,” Netlify.com. [Online]. Available: https://app.netlify.com/. [Accessed: 18-Feb-2024].
+[5]	“Home v6.22.1,” Reactrouter.com. [Online]. Available: https://reactrouter.com/en/main. [Accessed: 17-Feb-2024].
+
+[6]	“Npm: Axios,” npm. [Online]. Available: https://www.npmjs.com/package//axios. [Accessed: 17-Feb-2024].
+
+[7]	“Netlify app,” Netlify.com. [Online]. Available: https://app.netlify.com/. [Accessed: 18-Feb-2024].
 
