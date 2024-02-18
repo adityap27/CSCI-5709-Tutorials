@@ -6,7 +6,7 @@ export default function UserDetailsRow(props) {
   return (
     <tr className="user-list-row" onClick={() => navigate("/user-profile/" + props.id)}>
       <td>
-        <img src={props.picture} />
+        <img src={props.picture} alt="User Image"/>
       </td>
       <td>{props.name}</td>
       <td>{props.id}</td>

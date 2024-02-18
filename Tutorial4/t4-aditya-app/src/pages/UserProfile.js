@@ -23,7 +23,7 @@ export default function UserProfilePage() {
 
   function displayValue(key, value) {
     if (key === "picture") {
-      return <img src={value} />;
+      return <img src={value} alt="User Image"/>;
     } else if (key === "friends") {
       return value.map((v) => v.name).join(", ");
     } else if (key === "tags") {
